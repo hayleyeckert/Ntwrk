@@ -3,7 +3,6 @@
 //  Ntwrk
 //
 //  Created by Hayley Eckert on 1/27/18.
-//  Copyright © 2018 Hayley Eckert. All rights reserved.
 //
 
 import UIKit
