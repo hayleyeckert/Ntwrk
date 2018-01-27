@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2803365E201D22B200F4A038 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2803365D201D22B200F4A038 /* LoginView.storyboard */; };
-		28033660201D238700F4A038 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2803365F201D238700F4A038 /* linkedin-sdk.framework */; };
+		28033663201D2BCF00F4A038 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28033662201D2BCF00F4A038 /* linkedin-sdk.framework */; };
 		C4CA36A3201D0DAC00288013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A2201D0DAC00288013 /* AppDelegate.swift */; };
 		C4CA36A5201D0DAC00288013 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A4201D0DAC00288013 /* RootViewController.swift */; };
 		C4CA36A7201D0DAC00288013 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A6201D0DAC00288013 /* DataViewController.swift */; };
@@ -39,7 +39,8 @@
 
 /* Begin PBXFileReference section */
 		2803365D201D22B200F4A038 /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
-		2803365F201D238700F4A038 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "linkedin-sdk.framework"; path = "../../../Downloads/li-ios-sdk-1.0.7-release/linkedin-sdk.framework"; sourceTree = "<group>"; };
+		28033661201D29C900F4A038 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		28033662201D2BCF00F4A038 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "linkedin-sdk.framework"; path = "../../../Downloads/li-ios-sdk-1.0.7-release/linkedin-sdk.framework"; sourceTree = "<group>"; };
 		C4CA369F201D0DAC00288013 /* Ntwrk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ntwrk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CA36A2201D0DAC00288013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4CA36A4201D0DAC00288013 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28033660201D238700F4A038 /* linkedin-sdk.framework in Frameworks */,
+				28033663201D2BCF00F4A038 /* linkedin-sdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +107,7 @@
 		C4CA36A1201D0DAC00288013 /* Ntwrk */ = {
 			isa = PBXGroup;
 			children = (
+				28033662201D2BCF00F4A038 /* linkedin-sdk.framework */,
 				C4CA36A2201D0DAC00288013 /* AppDelegate.swift */,
 				C4CA36A4201D0DAC00288013 /* RootViewController.swift */,
 				C4CA36A6201D0DAC00288013 /* DataViewController.swift */,
@@ -115,7 +117,7 @@
 				C4CA36AD201D0DAC00288013 /* Assets.xcassets */,
 				C4CA36AF201D0DAC00288013 /* LaunchScreen.storyboard */,
 				C4CA36B2201D0DAC00288013 /* Info.plist */,
-				2803365F201D238700F4A038 /* linkedin-sdk.framework */,
+				28033661201D29C900F4A038 /* Header.h */,
 			);
 			path = Ntwrk;
 			sourceTree = "<group>";
@@ -443,10 +445,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Ntwrk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.Ntwrk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Ntwrk/Header.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,10 +461,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Ntwrk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.Ntwrk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Ntwrk/Header.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
