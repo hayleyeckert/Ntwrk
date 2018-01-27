@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2803365E201D22B200F4A038 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2803365D201D22B200F4A038 /* LoginView.storyboard */; };
 		C4CA36A3201D0DAC00288013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A2201D0DAC00288013 /* AppDelegate.swift */; };
 		C4CA36A5201D0DAC00288013 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A4201D0DAC00288013 /* RootViewController.swift */; };
 		C4CA36A7201D0DAC00288013 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A6201D0DAC00288013 /* DataViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2803365D201D22B200F4A038 /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
 		C4CA369F201D0DAC00288013 /* Ntwrk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ntwrk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4CA36A2201D0DAC00288013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4CA36A4201D0DAC00288013 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				C4CA36A6201D0DAC00288013 /* DataViewController.swift */,
 				C4CA36A8201D0DAC00288013 /* ModelController.swift */,
 				C4CA36AA201D0DAC00288013 /* Main.storyboard */,
+				2803365D201D22B200F4A038 /* LoginView.storyboard */,
 				C4CA36AD201D0DAC00288013 /* Assets.xcassets */,
 				C4CA36AF201D0DAC00288013 /* LaunchScreen.storyboard */,
 				C4CA36B2201D0DAC00288013 /* Info.plist */,
@@ -241,6 +244,7 @@
 				C4CA36B1201D0DAC00288013 /* LaunchScreen.storyboard in Resources */,
 				C4CA36AE201D0DAC00288013 /* Assets.xcassets in Resources */,
 				C4CA36AC201D0DAC00288013 /* Main.storyboard in Resources */,
+				2803365E201D22B200F4A038 /* LoginView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
