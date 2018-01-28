@@ -133,18 +133,8 @@ class MapController: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
         let ac = UIAlertController(title: "TAMUHack", message: "View Participants", preferredStyle: .alert)
         let action = UIAlertAction(title: "Yes Please", style: .cancel, handler: { // Also action dismisses AlertController when pressed.
             action in
-            
-            //let logInViewController = DetailViewcontroller()
-            //self.navigationController?.pushViewController(logInViewController, animated: true)
-            
-            //let storyboard = UIStoryboard(name: "PopView", bundle: nil)
-            //let TVController = storyboard.instantiateViewController(withIdentifier: "PopView") as! TableViewController2
-            //self.present(TVController, animated: true, completion: nil)
-            //self.performSegue(withIdentifier: "PopView", sender: nil)
-            let viewController:UIViewController = UIStoryboard(name: "PopNav", bundle: nil).instantiateViewController(withIdentifier: "PopView") as UIViewController
-            // .instantiatViewControllerWithIdentifier() returns AnyObject! this must be downcast to utilize it
-            
-            self.present(viewController, animated: true, completion: nil)
+            self.performSegue(withIdentifier: "PopViewSegue", sender: nil)
+
         }
         )
         ac.addAction(action)// add action to alert

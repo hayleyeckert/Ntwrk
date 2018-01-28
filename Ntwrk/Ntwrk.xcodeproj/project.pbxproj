@@ -17,9 +17,9 @@
 		28BFF27F201DBAB3001F183D /* Sign-In-Large---Active.png in Resources */ = {isa = PBXBuildFile; fileRef = 28BFF27E201DBAB3001F183D /* Sign-In-Large---Active.png */; };
 		28BFF281201DBABA001F183D /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFF280201DBABA001F183D /* Ref.swift */; };
 		28BFF283201DBAC6001F183D /* DetailViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFF282201DBAC6001F183D /* DetailViewcontroller.swift */; };
-		28BFF285201DBAD0001F183D /* ProfilePopulation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BFF284201DBAD0001F183D /* ProfilePopulation.storyboard */; };
 		28BFF287201DBAD8001F183D /* TableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFF286201DBAD8001F183D /* TableViewController2.swift */; };
 		28BFF289201DBAE1001F183D /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFF288201DBAE1001F183D /* MapController.swift */; };
+		28BFF28B201DBF4C001F183D /* ProfilePopulation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28BFF28A201DBF4C001F183D /* ProfilePopulation.storyboard */; };
 		28D32822201DA4B30046D530 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D32821201DA4B30046D530 /* MapKit.framework */; };
 		E757A435A2CA927C662538E5 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9A240FCBDC2225D70845C7 /* libPods-Example.a */; };
 /* End PBXBuildFile section */
@@ -51,9 +51,9 @@
 		28BFF27E201DBAB3001F183D /* Sign-In-Large---Active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign-In-Large---Active.png"; sourceTree = "<group>"; };
 		28BFF280201DBABA001F183D /* Ref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ref.swift; path = /Users/Billy/Desktop/Ntwrk/Ntwrk/Ntwrk/Ref.swift; sourceTree = "<absolute>"; };
 		28BFF282201DBAC6001F183D /* DetailViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewcontroller.swift; sourceTree = "<group>"; };
-		28BFF284201DBAD0001F183D /* ProfilePopulation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfilePopulation.storyboard; sourceTree = "<group>"; };
 		28BFF286201DBAD8001F183D /* TableViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController2.swift; sourceTree = "<group>"; };
 		28BFF288201DBAE1001F183D /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		28BFF28A201DBF4C001F183D /* ProfilePopulation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfilePopulation.storyboard; sourceTree = "<group>"; };
 		28D32821201DA4B30046D530 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		AF9A240FCBDC2225D70845C7 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EBDFBCB4454976FCEA17D9 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +94,7 @@
 		10905A801BFE8FF9002AA119 /* Ntwrk */ = {
 			isa = PBXGroup;
 			children = (
+				28BFF28A201DBF4C001F183D /* ProfilePopulation.storyboard */,
 				10905A811BFE8FF9002AA119 /* AppDelegate.swift */,
 				10905A831BFE8FF9002AA119 /* ViewController.swift */,
 				28BFF27C201DBAA9001F183D /* myCell2.swift */,
@@ -107,7 +108,6 @@
 				10905A951BFE91EB002AA119 /* ObjectiveCHeader.h */,
 				28BFF286201DBAD8001F183D /* TableViewController2.swift */,
 				28BFF288201DBAE1001F183D /* MapController.swift */,
-				28BFF284201DBAD0001F183D /* ProfilePopulation.storyboard */,
 				280A483F201D7AC800D7E8FF /* ProfileViewController.swift */,
 			);
 			path = Ntwrk;
@@ -205,7 +205,7 @@
 				10905A8C1BFE8FF9002AA119 /* LaunchScreen.storyboard in Resources */,
 				10905A891BFE8FF9002AA119 /* Assets.xcassets in Resources */,
 				10905A871BFE8FF9002AA119 /* Main.storyboard in Resources */,
-				28BFF285201DBAD0001F183D /* ProfilePopulation.storyboard in Resources */,
+				28BFF28B201DBF4C001F183D /* ProfilePopulation.storyboard in Resources */,
 				28BFF27F201DBAB3001F183D /* Sign-In-Large---Active.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

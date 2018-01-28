@@ -12,7 +12,7 @@
         <!--RefChooser-->
         <scene sceneID="pmG-gY-vTN">
             <objects>
-                <tableViewController storyboardIdentifier="PopView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hbg-0L-sUh" userLabel="RefChooser" customClass="TableViewController2" customModule="SuperCool_V_2" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PopView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hbg-0L-sUh" userLabel="RefChooser" customClass="TableViewController2" customModule="Example" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="PopView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="109" sectionHeaderHeight="22" sectionFooterHeight="22" id="ST5-R9-ZkY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
