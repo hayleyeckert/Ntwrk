@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         */
         
         linkedinHelper.authorizeSuccess({ [unowned self] (lsToken) -> Void in
-            
+            self.requestProfile()
            // self.writeConsoleLine("Login success") //lsToken: \(lsToken)
         }, error: { [unowned self] (error) -> Void in
             
@@ -120,7 +120,7 @@ class ViewController: UIViewController {
             
             
             let titlePositions : Dictionary = response.jsonObject["positions"]! as! Dictionary<String, Any>
-            let PositionObjects : Array<Dictionary> = titlePositions["values"]! as! Array<Dictionary<String,Any>>
+            let PositionObjects : Array<Dictionary> = titlePositions["values"] as! Array<Dictionary<String,Any>>
             let title: String = PositionObjects[0]["title"]! as! String
             print(title)
             print(firstName, lastName)
