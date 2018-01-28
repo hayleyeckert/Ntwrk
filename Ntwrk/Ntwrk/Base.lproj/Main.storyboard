@@ -128,18 +128,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p2G-7Y-CBA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p2G-7Y-CBA">
                                 <rect key="frame" x="71" y="72" width="232" height="243"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Name" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Eb-Nl-Xhg">
-                                <rect key="frame" x="16" y="323" width="343" height="54"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="IVZ-2x-ygl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yO-4r-TAf">
                                 <rect key="frame" x="112" y="588" width="150" height="52"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
@@ -149,48 +140,40 @@
                                     <segue destination="2Do-au-hOl" kind="show" id="heK-8f-RfO"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Location" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PxK-Ne-sei">
-                                <rect key="frame" x="16" y="385" width="343" height="53"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="EhV-5a-rjz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Position" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4qM-Wy-3cg">
-                                <rect key="frame" x="16" y="446" width="343" height="123"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="123" id="OGk-UI-b4l"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjG-1q-k1b">
+                                <rect key="frame" x="16" y="337" width="343" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="51"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxs-vQ-8tT">
+                                <rect key="frame" x="16" y="418" width="343" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zw-wf-8fC">
+                                <rect key="frame" x="16" y="476" width="343" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="p2G-7Y-CBA" firstAttribute="centerX" secondItem="9Eb-Nl-Xhg" secondAttribute="centerX" id="0Zw-FU-B67"/>
-                            <constraint firstItem="PxK-Ne-sei" firstAttribute="top" secondItem="9Eb-Nl-Xhg" secondAttribute="bottom" constant="8" symbolic="YES" id="279-rS-ado"/>
-                            <constraint firstItem="9Eb-Nl-Xhg" firstAttribute="leading" secondItem="meZ-Jh-oXb" secondAttribute="leadingMargin" id="2db-6U-k4r"/>
-                            <constraint firstItem="9Eb-Nl-Xhg" firstAttribute="trailing" secondItem="PxK-Ne-sei" secondAttribute="trailing" id="ARo-hK-dnX"/>
-                            <constraint firstItem="3yO-4r-TAf" firstAttribute="top" secondItem="4qM-Wy-3cg" secondAttribute="bottom" constant="19" id="DMq-Ts-Ed8"/>
-                            <constraint firstItem="9Eb-Nl-Xhg" firstAttribute="top" secondItem="p2G-7Y-CBA" secondAttribute="bottom" constant="8" symbolic="YES" id="KrM-Ke-Db2"/>
                             <constraint firstItem="p2G-7Y-CBA" firstAttribute="top" secondItem="XQ0-hc-R21" secondAttribute="bottom" constant="8" symbolic="YES" id="MkC-SO-bho"/>
                             <constraint firstItem="65N-At-4mP" firstAttribute="top" secondItem="3yO-4r-TAf" secondAttribute="bottom" constant="27" id="NdY-eY-92P"/>
                             <constraint firstItem="p2G-7Y-CBA" firstAttribute="leading" secondItem="meZ-Jh-oXb" secondAttribute="leadingMargin" constant="55" id="Q5H-YN-UdU"/>
-                            <constraint firstItem="4qM-Wy-3cg" firstAttribute="centerX" secondItem="3yO-4r-TAf" secondAttribute="centerX" id="YcF-B4-NXw"/>
-                            <constraint firstItem="9Eb-Nl-Xhg" firstAttribute="leading" secondItem="PxK-Ne-sei" secondAttribute="leading" id="Yyd-hX-Xk9"/>
-                            <constraint firstItem="PxK-Ne-sei" firstAttribute="leading" secondItem="4qM-Wy-3cg" secondAttribute="leading" id="bfy-aW-WPf"/>
-                            <constraint firstItem="PxK-Ne-sei" firstAttribute="trailing" secondItem="4qM-Wy-3cg" secondAttribute="trailing" id="lbe-sf-cZh"/>
                             <constraint firstAttribute="trailing" secondItem="3yO-4r-TAf" secondAttribute="trailing" constant="113" id="mrf-o1-Gep"/>
-                            <constraint firstItem="4qM-Wy-3cg" firstAttribute="top" secondItem="PxK-Ne-sei" secondAttribute="bottom" constant="8" symbolic="YES" id="xvz-pL-Phb"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="LocLabel" destination="PxK-Ne-sei" id="XhQ-2G-T8C"/>
-                        <outlet property="NameLabel" destination="9Eb-Nl-Xhg" id="Rvh-t7-2Lv"/>
-                        <outlet property="PosLabel" destination="4qM-Wy-3cg" id="vge-61-A9C"/>
+                        <outlet property="LocLabel" destination="sxs-vQ-8tT" id="32E-yj-ePY"/>
+                        <outlet property="NameLabel" destination="ZjG-1q-k1b" id="uax-0H-wpv"/>
+                        <outlet property="PosLabel" destination="7Zw-wf-8fC" id="0ap-qO-jNy"/>
                         <outlet property="ProfPic" destination="p2G-7Y-CBA" id="jkk-WJ-4aP"/>
                     </connections>
                 </viewController>

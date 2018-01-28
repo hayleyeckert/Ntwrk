@@ -14,6 +14,11 @@
 		10905A8C1BFE8FF9002AA119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10905A8A1BFE8FF9002AA119 /* LaunchScreen.storyboard */; };
 		280A483E201D4CF400D7E8FF /* Sign-In-Large---Active.png in Resources */ = {isa = PBXBuildFile; fileRef = 280A483D201D4CF400D7E8FF /* Sign-In-Large---Active.png */; };
 		280A4840201D7AC800D7E8FF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A483F201D7AC800D7E8FF /* ProfileViewController.swift */; };
+		28D32818201D937B0046D530 /* ProfilePopulation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28D32817201D937B0046D530 /* ProfilePopulation.storyboard */; };
+		28D3281A201D93870046D530 /* TableViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D32819201D93870046D530 /* TableViewController2.swift */; };
+		28D3281C201D95BC0046D530 /* myCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D3281B201D95BC0046D530 /* myCell2.swift */; };
+		28D3281E201D99390046D530 /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D3281D201D99390046D530 /* Ref.swift */; };
+		28D32820201D993F0046D530 /* DetailViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D3281F201D993F0046D530 /* DetailViewcontroller.swift */; };
 		E757A435A2CA927C662538E5 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9A240FCBDC2225D70845C7 /* libPods-Example.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +46,11 @@
 		10905A951BFE91EB002AA119 /* ObjectiveCHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCHeader.h; sourceTree = "<group>"; };
 		280A483D201D4CF400D7E8FF /* Sign-In-Large---Active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sign-In-Large---Active.png"; path = "../../../../Downloads/LinkedinSwift-master/Example/Example/Ntwrk/Sign-In-Large---Active.png"; sourceTree = "<group>"; };
 		280A483F201D7AC800D7E8FF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		28D32817201D937B0046D530 /* ProfilePopulation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ProfilePopulation.storyboard; path = "../../../July 8 App Transfer/ProfilePopulation.storyboard"; sourceTree = "<group>"; };
+		28D32819201D93870046D530 /* TableViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController2.swift; path = "../../../July 8 App Transfer/SuperCool_V.2/TableViewController2.swift"; sourceTree = "<group>"; };
+		28D3281B201D95BC0046D530 /* myCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = myCell2.swift; path = "../../../July 8 App Transfer/SuperCool_V.2/myCell2.swift"; sourceTree = "<group>"; };
+		28D3281D201D99390046D530 /* Ref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ref.swift; path = ../../../../Downloads/Ref.swift; sourceTree = "<group>"; };
+		28D3281F201D993F0046D530 /* DetailViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewcontroller.swift; path = ../../../../Downloads/DetailViewcontroller.swift; sourceTree = "<group>"; };
 		AF9A240FCBDC2225D70845C7 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EBDFBCB4454976FCEA17D9 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		EE6C4494B4C0312B5F8B17D6 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +89,7 @@
 		10905A801BFE8FF9002AA119 /* Ntwrk */ = {
 			isa = PBXGroup;
 			children = (
+				28D3281B201D95BC0046D530 /* myCell2.swift */,
 				10905A811BFE8FF9002AA119 /* AppDelegate.swift */,
 				10905A831BFE8FF9002AA119 /* ViewController.swift */,
 				10905A851BFE8FF9002AA119 /* Main.storyboard */,
@@ -86,8 +97,12 @@
 				10905A881BFE8FF9002AA119 /* Assets.xcassets */,
 				10905A8A1BFE8FF9002AA119 /* LaunchScreen.storyboard */,
 				10905A8D1BFE8FF9002AA119 /* Info.plist */,
+				28D3281D201D99390046D530 /* Ref.swift */,
+				28D3281F201D993F0046D530 /* DetailViewcontroller.swift */,
 				10905A951BFE91EB002AA119 /* ObjectiveCHeader.h */,
 				280A483F201D7AC800D7E8FF /* ProfileViewController.swift */,
+				28D32817201D937B0046D530 /* ProfilePopulation.storyboard */,
+				28D32819201D93870046D530 /* TableViewController2.swift */,
 			);
 			path = Ntwrk;
 			sourceTree = "<group>";
@@ -176,6 +191,7 @@
 				280A483E201D4CF400D7E8FF /* Sign-In-Large---Active.png in Resources */,
 				10905A891BFE8FF9002AA119 /* Assets.xcassets in Resources */,
 				10905A871BFE8FF9002AA119 /* Main.storyboard in Resources */,
+				28D32818201D937B0046D530 /* ProfilePopulation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +255,11 @@
 			files = (
 				280A4840201D7AC800D7E8FF /* ProfileViewController.swift in Sources */,
 				10905A841BFE8FF9002AA119 /* ViewController.swift in Sources */,
+				28D32820201D993F0046D530 /* DetailViewcontroller.swift in Sources */,
+				28D3281A201D93870046D530 /* TableViewController2.swift in Sources */,
 				10905A821BFE8FF9002AA119 /* AppDelegate.swift in Sources */,
+				28D3281C201D95BC0046D530 /* myCell2.swift in Sources */,
+				28D3281E201D99390046D530 /* Ref.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

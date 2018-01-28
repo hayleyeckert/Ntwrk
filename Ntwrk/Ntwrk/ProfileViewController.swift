@@ -11,9 +11,9 @@ import UIKit
 class ProfileViewController: UIViewController {
 
     @IBOutlet weak var ProfPic: UIImageView!
-    @IBOutlet weak var NameLabel: UITextView!
-    @IBOutlet weak var LocLabel: UITextView!
-    @IBOutlet weak var PosLabel: UITextView!
+    @IBOutlet weak var NameLabel: UILabel!
+    @IBOutlet weak var LocLabel: UILabel!
+    @IBOutlet weak var PosLabel: UILabel!
     
     var NameString = String()
     var LocString = String()
