@@ -29,6 +29,7 @@ class ProfileViewController: UIViewController {
         NameLabel.text = NameString
         LocLabel.text = LocString
         PosLabel.text = PosString
+        ProfPic.image = #imageLiteral(resourceName: "Michayal")
 
 
         // Do any additional setup after loading the view.

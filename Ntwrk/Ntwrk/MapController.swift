@@ -13,6 +13,7 @@ import UIKit
 import MapKit
 import CoreLocation
 import UserNotifications
+//import AlamoFire
 
 class MapController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     var locationManager: CLLocationManager = CLLocationManager()
@@ -134,6 +135,7 @@ class MapController: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
         let action = UIAlertAction(title: "Yes Please", style: .cancel, handler: { // Also action dismisses AlertController when pressed.
             action in
             self.performSegue(withIdentifier: "PopViewSegue", sender: nil)
+            
 
         }
         )

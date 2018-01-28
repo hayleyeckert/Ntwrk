@@ -7,35 +7,35 @@
 //
 import UIKit
 
+
 class TableViewController2: UITableViewController {
     
-    var SenderName = ""
     var RefArray:[Ref] = [Ref]()
-    var RefData = ["Mickey","Hayley","Billy","Cyrus","ElonMusk","MichaelScott","KobeBryant","EKingGill","JeffZhao"]
+    var RefData = ["Michayal","Hayley","Billy","Cyrus","ElonMusk","MichaelScott","KobeBryant","EKingGill","JeffZhao"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let Mickey = Ref(imageName: "R22.jpg", description: "R22", position:  "CEO")
-        let Hayley = Ref(imageName: "R410A.jpg", description: "R410A", position: "CEO")
-        let Billy = Ref(imageName: "R134A.jpg", description: "R134a", position: "CEO")
-        let Cyrus = Ref(imageName: "R11.jpg", description: "R11", position: "CEO")
-        let ElonMusk = Ref(imageName: "R12.jpg", description: "R12", position: "CEO")
-        let MichaelScott = Ref(imageName: "R13.jpg", description: "R13", position: "CEO")
-        let KobeBryant = Ref(imageName: "R23.jpg", description: "R23", position: "CEO")
-        let EKingGill = Ref(imageName: "R123.jpg", description: "R123", position: "CEO")
-        let JeffZhao = Ref(imageName: "R124.jpg", description: "R124", position: "CEO")
+        let Michayal = Ref(imageName: "Michayal.jpg", description: "Michayal Mathew", position:  "Intern at NASA", location: "College Station, TX")
+        let Hayley = Ref(imageName: "Hayley.jpg", description: "Hayley Eckert", position: "Intern at Google", location: "College Station, TX")
+        let Billy = Ref(imageName: "Billy.jpg", description: "Bill Newman", position: "Intern at AT&T", location: "College Station, TX")
+        let Cyrus = Ref(imageName: "Cyrus.jpg", description: "Cyrus Roshan", position: "Intern at LinkedIn", location: "Dallas, TX")
+        let ElonMusk = Ref(imageName: "Elon.JPEG", description: "Elon Musk", position: "CEO of Tesla/SpaceX", location: "Mars")
+        let MichaelScott = Ref(imageName: "MichaelScott.JPEG", description: "Michael Scott", position: "Dunder Mifflin, Inc.", location: "Scranton, PA")
+        //let KobeBryant = Ref(imageName: "R23.jpg", description: "R23", position: "CEO", location: "College Station, TX")
+        let EKingGill = Ref(imageName: "EKingGill.JPEG", description: "E King Gill", position: "12th Man", location: "College Station, TX")
+        //let JeffZhao = Ref(imageName: "R124.jpg", description: "R124", position: "CEO", location: "College Station, TX")
 
-        RefArray.append(Mickey)
+        RefArray.append(Michayal)
         RefArray.append(Hayley)
         RefArray.append(Billy)
         RefArray.append(Cyrus)
         RefArray.append(ElonMusk)
         RefArray.append(MichaelScott)
-        RefArray.append(KobeBryant)
+       // RefArray.append(KobeBryant)
         RefArray.append(EKingGill)
-        RefArray.append(JeffZhao)
+       // RefArray.append(JeffZhao)
         
     }
     
@@ -59,21 +59,22 @@ class TableViewController2: UITableViewController {
     }
     
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         let cell2 = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath as IndexPath) as! myCell2
         
         let RefItem = RefArray[indexPath.row]
         
         cell2.myImageView.image = UIImage(named: RefItem.imageName)
         cell2.NameLabel.text = RefItem.description
-        cell2.PosLabel.text = RefItem.description
+        cell2.PosLabel.text = RefItem.position
         
         return cell2
         
         
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let RefSelected = RefArray[indexPath.row]
         
@@ -82,7 +83,9 @@ class TableViewController2: UITableViewController {
         
         DetailVC.RefImage = RefSelected.imageName
         DetailVC.RefName = RefSelected.description
-        //DetailVC.RefPos = RefSelected.position
+        DetailVC.RefPos = RefSelected.position
+        DetailVC.RefLoc = RefSelected.location
+
         self.present(DetailVC, animated: true, completion: nil)
     }
     

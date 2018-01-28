@@ -67,6 +67,7 @@ class ViewController: UIViewController {
             
             print(response.jsonObject["emailAddress"]!)
             print(firstName, lastName)
+            print(response.jsonObject["location.name"])
             
             
             
@@ -93,23 +94,26 @@ class ViewController: UIViewController {
     @IBAction func requestProfile() {
         
         linkedinHelper.requestURL("https://api.linkedin.com/v1/people/~:(id,first-name,last-name,email-address,picture-url,picture-urls::(original),positions,date-of-birth,phone-numbers,location)?format=json", requestType: LinkedinSwiftRequestGet, success: { (response) -> Void in
-            
+            print(response)
             self.writeConsoleLine("Request success with response: \(response)")
             let firstName = response.jsonObject["firstName"]!
             let lastName = response.jsonObject["lastName"]!
             let emailAdress = response.jsonObject["emailAddress"]!
-            let location = response.jsonObject["location"]!
+            var location = response.jsonObject["location"]
+            print(location)
+            //let name = location!["name"]!
             let pictureUrl = response.jsonObject["pictureUrl"]!
             let positions = response.jsonObject["positions"]!
             
-            print(response.jsonObject["emailAddress"]!)
+            print(response.jsonObject["location"]!)
+            print(location)
             print(firstName, lastName)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let ProfileController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
             
-            ProfileController.NameString = "Michayal Mathew"//firstName as! String
-            ProfileController.LocString = "Houston, TX" //location as! String
-            ProfileController.PosString = "Nerd.tamu.edu" //positions as! String
+            ProfileController.NameString = "Michayal Mathew" //firstName as! String
+            ProfileController.LocString = "College Station, TX" //location as! String
+            ProfileController.PosString = "Intern at NASA" //positions as! String
             self.present(ProfileController, animated: true, completion: nil)
             
             
