@@ -23,9 +23,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        consoleTextView.layer.cornerRadius = 10.0
-        consoleTextView.layer.borderColor = UIColor.orange.cgColor
-        consoleTextView.layer.borderWidth = 1.0
+        //consoleTextView.layer.cornerRadius = 10.0
+        //consoleTextView.layer.borderColor = UIColor.orange.cgColor
+        //consoleTextView.layer.borderWidth = 1.0
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         
         linkedinHelper.authorizeSuccess({ [unowned self] (lsToken) -> Void in
             
-            self.writeConsoleLine("Login success lsToken: \(lsToken)")
+            self.writeConsoleLine("Login success") //lsToken: \(lsToken)
         }, error: { [unowned self] (error) -> Void in
             
             self.writeConsoleLine("Encounter error: \(error.localizedDescription)")
@@ -55,8 +55,37 @@ class ViewController: UIViewController {
             
             self.writeConsoleLine("User Cancelled!")
         })
+        linkedinHelper.requestURL("https://api.linkedin.com/v1/people/~:(id,first-name,last-name,email-address,picture-url,picture-urls::(original),positions,date-of-birth,phone-numbers,location)?format=json", requestType: LinkedinSwiftRequestGet, success: { (response) -> Void in
+            
+            self.writeConsoleLine("Request success with response: \(response)")
+            let firstName = response.jsonObject["firstName"]!
+            let lastName = response.jsonObject["lastName"]!
+            let emailAdress = response.jsonObject["emailAddress"]!
+            let location = response.jsonObject["location"]!
+            let pictureUrl = response.jsonObject["pictureUrl"]!
+            let positions = response.jsonObject["positions"]!
+            
+            print(response.jsonObject["emailAddress"]!)
+            print(firstName, lastName)
+            
+            
+            
+            //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            //let ProfileController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+            
+            //ProfileController.NameString = "Michayal Mathew"//firstName as! String
+            //ProfileController.LocString = "Houston, TX" //location as! String
+            //ProfileController.PosString = "Nerd.tamu.edu" //positions as! String
+            
+            //self.present(ProfileController, animated: true, completion: nil)
+            
+        }) { [unowned self] (error) -> Void in
+            
+            self.writeConsoleLine("Encounter error: \(error.localizedDescription)")
+        }
+
     }
-    
+
     /**
      Request profile for your just logged in account
      */
@@ -75,7 +104,14 @@ class ViewController: UIViewController {
             
             print(response.jsonObject["emailAddress"]!)
             print(firstName, lastName)
-
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let ProfileController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+            
+            ProfileController.NameString = "Michayal Mathew"//firstName as! String
+            ProfileController.LocString = "Houston, TX" //location as! String
+            ProfileController.PosString = "Nerd.tamu.edu" //positions as! String
+            self.present(ProfileController, animated: true, completion: nil)
+            
             
         }) { [unowned self] (error) -> Void in
                 
@@ -101,5 +137,6 @@ class ViewController: UIViewController {
             self.consoleTextView.scrollRectToVisible(rect, animated: true)
         }
     }
+    
 }
 

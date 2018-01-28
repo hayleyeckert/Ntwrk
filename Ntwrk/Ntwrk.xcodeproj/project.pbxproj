@@ -13,6 +13,7 @@
 		10905A891BFE8FF9002AA119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10905A881BFE8FF9002AA119 /* Assets.xcassets */; };
 		10905A8C1BFE8FF9002AA119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10905A8A1BFE8FF9002AA119 /* LaunchScreen.storyboard */; };
 		280A483E201D4CF400D7E8FF /* Sign-In-Large---Active.png in Resources */ = {isa = PBXBuildFile; fileRef = 280A483D201D4CF400D7E8FF /* Sign-In-Large---Active.png */; };
+		280A4840201D7AC800D7E8FF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A483F201D7AC800D7E8FF /* ProfileViewController.swift */; };
 		E757A435A2CA927C662538E5 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9A240FCBDC2225D70845C7 /* libPods-Example.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		10905A8D1BFE8FF9002AA119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10905A951BFE91EB002AA119 /* ObjectiveCHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCHeader.h; sourceTree = "<group>"; };
 		280A483D201D4CF400D7E8FF /* Sign-In-Large---Active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sign-In-Large---Active.png"; path = "../../../../Downloads/LinkedinSwift-master/Example/Example/Ntwrk/Sign-In-Large---Active.png"; sourceTree = "<group>"; };
+		280A483F201D7AC800D7E8FF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AF9A240FCBDC2225D70845C7 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EBDFBCB4454976FCEA17D9 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		EE6C4494B4C0312B5F8B17D6 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				10905A8A1BFE8FF9002AA119 /* LaunchScreen.storyboard */,
 				10905A8D1BFE8FF9002AA119 /* Info.plist */,
 				10905A951BFE91EB002AA119 /* ObjectiveCHeader.h */,
+				280A483F201D7AC800D7E8FF /* ProfileViewController.swift */,
 			);
 			path = Ntwrk;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280A4840201D7AC800D7E8FF /* ProfileViewController.swift in Sources */,
 				10905A841BFE8FF9002AA119 /* ViewController.swift in Sources */,
 				10905A821BFE8FF9002AA119 /* AppDelegate.swift in Sources */,
 			);
