@@ -49,7 +49,7 @@
 		280A483F201D7AC800D7E8FF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		28BFF27C201DBAA9001F183D /* myCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myCell2.swift; sourceTree = "<group>"; };
 		28BFF27E201DBAB3001F183D /* Sign-In-Large---Active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sign-In-Large---Active.png"; sourceTree = "<group>"; };
-		28BFF280201DBABA001F183D /* Ref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
+		28BFF280201DBABA001F183D /* Ref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ref.swift; path = /Users/Billy/Desktop/Ntwrk/Ntwrk/Ntwrk/Ref.swift; sourceTree = "<absolute>"; };
 		28BFF282201DBAC6001F183D /* DetailViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewcontroller.swift; sourceTree = "<group>"; };
 		28BFF284201DBAD0001F183D /* ProfilePopulation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfilePopulation.storyboard; sourceTree = "<group>"; };
 		28BFF286201DBAD8001F183D /* TableViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController2.swift; sourceTree = "<group>"; };
