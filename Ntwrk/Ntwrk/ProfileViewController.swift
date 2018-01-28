@@ -15,6 +15,11 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var LocLabel: UILabel!
     @IBOutlet weak var PosLabel: UILabel!
     
+    @IBAction func JoinRoom(_ sender: Any) {
+        
+    }
+    
+    
     var NameString = String()
     var LocString = String()
     var PosString = String()

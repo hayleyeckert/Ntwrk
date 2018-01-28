@@ -19,6 +19,8 @@
 		28D3281C201D95BC0046D530 /* myCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D3281B201D95BC0046D530 /* myCell2.swift */; };
 		28D3281E201D99390046D530 /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D3281D201D99390046D530 /* Ref.swift */; };
 		28D32820201D993F0046D530 /* DetailViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D3281F201D993F0046D530 /* DetailViewcontroller.swift */; };
+		28D32822201DA4B30046D530 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D32821201DA4B30046D530 /* MapKit.framework */; };
+		28D32824201DA5050046D530 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D32823201DA5040046D530 /* MapController.swift */; };
 		E757A435A2CA927C662538E5 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9A240FCBDC2225D70845C7 /* libPods-Example.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		28D3281B201D95BC0046D530 /* myCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = myCell2.swift; path = "../../../July 8 App Transfer/SuperCool_V.2/myCell2.swift"; sourceTree = "<group>"; };
 		28D3281D201D99390046D530 /* Ref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ref.swift; path = ../../../../Downloads/Ref.swift; sourceTree = "<group>"; };
 		28D3281F201D993F0046D530 /* DetailViewcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewcontroller.swift; path = ../../../../Downloads/DetailViewcontroller.swift; sourceTree = "<group>"; };
+		28D32821201DA4B30046D530 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		28D32823201DA5040046D530 /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapController.swift; path = ../../../../Downloads/MapController.swift; sourceTree = "<group>"; };
 		AF9A240FCBDC2225D70845C7 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6EBDFBCB4454976FCEA17D9 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		EE6C4494B4C0312B5F8B17D6 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D32822201DA4B30046D530 /* MapKit.framework in Frameworks */,
 				E757A435A2CA927C662538E5 /* libPods-Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +108,7 @@
 				280A483F201D7AC800D7E8FF /* ProfileViewController.swift */,
 				28D32817201D937B0046D530 /* ProfilePopulation.storyboard */,
 				28D32819201D93870046D530 /* TableViewController2.swift */,
+				28D32823201DA5040046D530 /* MapController.swift */,
 			);
 			path = Ntwrk;
 			sourceTree = "<group>";
@@ -119,6 +125,7 @@
 		F9B4D6635D647DE1C863DF9F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28D32821201DA4B30046D530 /* MapKit.framework */,
 				AF9A240FCBDC2225D70845C7 /* libPods-Example.a */,
 			);
 			name = Frameworks;
@@ -161,6 +168,14 @@
 					10905A7D1BFE8FF9002AA119 = {
 						CreatedOnToolsVersion = 7.1.1;
 						LastSwiftMigration = 0810;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -253,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D32824201DA5050046D530 /* MapController.swift in Sources */,
 				280A4840201D7AC800D7E8FF /* ProfileViewController.swift in Sources */,
 				10905A841BFE8FF9002AA119 /* ViewController.swift in Sources */,
 				28D32820201D993F0046D530 /* DetailViewcontroller.swift in Sources */,

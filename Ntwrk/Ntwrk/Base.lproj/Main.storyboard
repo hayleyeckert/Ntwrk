@@ -99,7 +99,6 @@
                     <navigationItem key="navigationItem" id="U1O-gC-rbS"/>
                     <connections>
                         <outlet property="btnLogin" destination="x2m-HZ-CTH" id="XOW-gY-GzD"/>
-                        <outlet property="btnProfile" destination="3yO-4r-TAf" id="3VP-cM-Zv4"/>
                         <outlet property="consoleTextView" destination="ndA-qQ-P8c" id="ccf-uC-XSM"/>
                         <segue destination="FhR-iJ-eQu" kind="show" id="Uph-9n-tls"/>
                     </connections>
@@ -107,14 +106,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yd-QH-cTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="588" y="369.26536731634184"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="Dnj-3x-WfL">
-            <objects>
-                <viewControllerPlaceholder id="2Do-au-hOl" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HJm-Lw-vuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1297" y="747"/>
         </scene>
         <!--My Profile-->
         <scene sceneID="0tq-hb-tj8">
@@ -136,8 +127,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <state key="normal" title="Join Room"/>
                                 <connections>
-                                    <action selector="requestProfile" destination="C1e-JL-lFR" eventType="touchUpInside" id="FDk-yx-YAa"/>
-                                    <segue destination="2Do-au-hOl" kind="show" id="heK-8f-RfO"/>
+                                    <segue destination="Voi-Fs-tfQ" kind="show" id="eps-Ud-TMo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjG-1q-k1b">
@@ -180,6 +170,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IYa-6D-pyH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1928.8" y="332.38380809595208"/>
+        </scene>
+        <!--Map Controller-->
+        <scene sceneID="DlL-bi-KcI">
+            <objects>
+                <viewController storyboardIdentifier="MapView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Voi-Fs-tfQ" customClass="MapController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="bK4-4v-IQb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </mapView>
+                    <connections>
+                        <outlet property="mapView" destination="bK4-4v-IQb" id="ald-jA-7Sr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePv-G2-CUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2913" y="369"/>
+        </scene>
+        <!--Detail Viewcontroller-->
+        <scene sceneID="SGH-IE-OZP">
+            <objects>
+                <viewController id="Ra6-E8-Geo" customClass="DetailViewcontroller" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gCQ-OZ-V90"/>
+                        <viewControllerLayoutGuide type="bottom" id="tGh-JC-uvX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nb7-rn-qOX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="htc-we-hZZ">
+                                <rect key="frame" x="139" y="216" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x9a-5Y-0of" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4208" y="424"/>
         </scene>
     </scenes>
     <resources>
