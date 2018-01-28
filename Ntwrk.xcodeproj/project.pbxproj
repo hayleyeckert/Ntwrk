@@ -1,617 +1,618 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 48;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 48;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		2803365E201D22B200F4A038 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2803365D201D22B200F4A038 /* LoginView.storyboard */; };
-		28033660201D238700F4A038 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2803365F201D238700F4A038 /* linkedin-sdk.framework */; };
-		C4CA36A3201D0DAC00288013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A2201D0DAC00288013 /* AppDelegate.swift */; };
-		C4CA36A5201D0DAC00288013 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A4201D0DAC00288013 /* RootViewController.swift */; };
-		C4CA36A7201D0DAC00288013 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A6201D0DAC00288013 /* DataViewController.swift */; };
-		C4CA36A9201D0DAC00288013 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A8201D0DAC00288013 /* ModelController.swift */; };
-		C4CA36AC201D0DAC00288013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CA36AA201D0DAC00288013 /* Main.storyboard */; };
-		C4CA36AE201D0DAC00288013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4CA36AD201D0DAC00288013 /* Assets.xcassets */; };
-		C4CA36B1201D0DAC00288013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CA36AF201D0DAC00288013 /* LaunchScreen.storyboard */; };
-		C4CA36BC201D0DAC00288013 /* NtwrkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36BB201D0DAC00288013 /* NtwrkTests.swift */; };
-		C4CA36C7201D0DAC00288013 /* NtwrkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36C6201D0DAC00288013 /* NtwrkUITests.swift */; };
-		C4CA36D7201D256400288013 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CA36D6201D256400288013 /* MapView.storyboard */; };
-		C4CA3726201D40FF00288013 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA3725201D40FF00288013 /* MapController.swift */; };
+        2803365E201D22B200F4A038 /* LoginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2803365D201D22B200F4A038 /* LoginView.storyboard */; };
+        28033660201D238700F4A038 /* linkedin-sdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2803365F201D238700F4A038 /* linkedin-sdk.framework */; };
+        C4CA36A3201D0DAC00288013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A2201D0DAC00288013 /* AppDelegate.swift */; };
+        C4CA36A5201D0DAC00288013 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A4201D0DAC00288013 /* RootViewController.swift */; };
+        C4CA36A7201D0DAC00288013 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A6201D0DAC00288013 /* DataViewController.swift */; };
+        C4CA36A9201D0DAC00288013 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36A8201D0DAC00288013 /* ModelController.swift */; };
+        C4CA36AC201D0DAC00288013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CA36AA201D0DAC00288013 /* Main.storyboard */; };
+        C4CA36AE201D0DAC00288013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4CA36AD201D0DAC00288013 /* Assets.xcassets */; };
+        C4CA36B1201D0DAC00288013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CA36AF201D0DAC00288013 /* LaunchScreen.storyboard */; };
+        C4CA36BC201D0DAC00288013 /* NtwrkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36BB201D0DAC00288013 /* NtwrkTests.swift */; };
+        C4CA36C7201D0DAC00288013 /* NtwrkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA36C6201D0DAC00288013 /* NtwrkUITests.swift */; };
+        C4CA36D7201D256400288013 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4CA36D6201D256400288013 /* MapView.storyboard */; };
+        C4CA3726201D40FF00288013 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CA3725201D40FF00288013 /* MapController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C4CA36B8201D0DAC00288013 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C4CA3697201D0DAC00288013 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C4CA369E201D0DAC00288013;
-			remoteInfo = Ntwrk;
-		};
-		C4CA36C3201D0DAC00288013 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C4CA3697201D0DAC00288013 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C4CA369E201D0DAC00288013;
-			remoteInfo = Ntwrk;
-		};
+        C4CA36B8201D0DAC00288013 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = C4CA3697201D0DAC00288013 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = C4CA369E201D0DAC00288013;
+            remoteInfo = Ntwrk;
+        };
+        C4CA36C3201D0DAC00288013 /* PBXContainerItemProxy */ = {
+            isa = PBXContainerItemProxy;
+            containerPortal = C4CA3697201D0DAC00288013 /* Project object */;
+            proxyType = 1;
+            remoteGlobalIDString = C4CA369E201D0DAC00288013;
+            remoteInfo = Ntwrk;
+        };
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2803365D201D22B200F4A038 /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
-		2803365F201D238700F4A038 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "linkedin-sdk.framework"; path = "../../../Downloads/li-ios-sdk-1.0.7-release/linkedin-sdk.framework"; sourceTree = "<group>"; };
-		C4CA369F201D0DAC00288013 /* Ntwrk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ntwrk.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4CA36A2201D0DAC00288013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4CA36A4201D0DAC00288013 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		C4CA36A6201D0DAC00288013 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		C4CA36A8201D0DAC00288013 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
-		C4CA36AB201D0DAC00288013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C4CA36AD201D0DAC00288013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C4CA36B0201D0DAC00288013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C4CA36B2201D0DAC00288013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4CA36B7201D0DAC00288013 /* NtwrkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NtwrkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4CA36BB201D0DAC00288013 /* NtwrkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NtwrkTests.swift; sourceTree = "<group>"; };
-		C4CA36BD201D0DAC00288013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4CA36C2201D0DAC00288013 /* NtwrkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NtwrkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4CA36C6201D0DAC00288013 /* NtwrkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NtwrkUITests.swift; sourceTree = "<group>"; };
-		C4CA36C8201D0DAC00288013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4CA36D6201D256400288013 /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
-		C4CA36E4201D3E8D00288013 /* Ntwrk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ntwrk-Bridging-Header.h"; sourceTree = "<group>"; };
-		C4CA3725201D40FF00288013 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+        2803365D201D22B200F4A038 /* LoginView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginView.storyboard; sourceTree = "<group>"; };
+        2803365F201D238700F4A038 /* linkedin-sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "linkedin-sdk.framework"; path = "../../../Downloads/li-ios-sdk-1.0.7-release/linkedin-sdk.framework"; sourceTree = "<group>"; };
+        C4CA369F201D0DAC00288013 /* Ntwrk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ntwrk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        C4CA36A2201D0DAC00288013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        C4CA36A4201D0DAC00288013 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+        C4CA36A6201D0DAC00288013 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+        C4CA36A8201D0DAC00288013 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+        C4CA36AB201D0DAC00288013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+        C4CA36AD201D0DAC00288013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        C4CA36B0201D0DAC00288013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        C4CA36B2201D0DAC00288013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        C4CA36B7201D0DAC00288013 /* NtwrkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NtwrkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        C4CA36BB201D0DAC00288013 /* NtwrkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NtwrkTests.swift; sourceTree = "<group>"; };
+        C4CA36BD201D0DAC00288013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        C4CA36C2201D0DAC00288013 /* NtwrkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NtwrkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+        C4CA36C6201D0DAC00288013 /* NtwrkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NtwrkUITests.swift; sourceTree = "<group>"; };
+        C4CA36C8201D0DAC00288013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        C4CA36D6201D256400288013 /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
+        C4CA36E4201D3E8D00288013 /* Ntwrk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ntwrk-Bridging-Header.h"; sourceTree = "<group>"; };
+        C4CA3725201D40FF00288013 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C4CA369C201D0DAC00288013 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28033660201D238700F4A038 /* linkedin-sdk.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4CA36B4201D0DAC00288013 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4CA36BF201D0DAC00288013 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        C4CA369C201D0DAC00288013 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                28033660201D238700F4A038 /* linkedin-sdk.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        C4CA36B4201D0DAC00288013 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        C4CA36BF201D0DAC00288013 /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C4CA3696201D0DAC00288013 = {
-			isa = PBXGroup;
-			children = (
-				C4CA36A1201D0DAC00288013 /* Ntwrk */,
-				C4CA36BA201D0DAC00288013 /* NtwrkTests */,
-				C4CA36C5201D0DAC00288013 /* NtwrkUITests */,
-				C4CA36A0201D0DAC00288013 /* Products */,
-				C4CA36D8201D30F300288013 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		C4CA36A0201D0DAC00288013 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C4CA369F201D0DAC00288013 /* Ntwrk.app */,
-				C4CA36B7201D0DAC00288013 /* NtwrkTests.xctest */,
-				C4CA36C2201D0DAC00288013 /* NtwrkUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C4CA36A1201D0DAC00288013 /* Ntwrk */ = {
-			isa = PBXGroup;
-			children = (
-				C4CA36A2201D0DAC00288013 /* AppDelegate.swift */,
-				C4CA36A4201D0DAC00288013 /* RootViewController.swift */,
-				C4CA36A6201D0DAC00288013 /* DataViewController.swift */,
-				C4CA36A8201D0DAC00288013 /* ModelController.swift */,
-				C4CA36AA201D0DAC00288013 /* Main.storyboard */,
-				C4CA36D6201D256400288013 /* MapView.storyboard */,
-				C4CA3725201D40FF00288013 /* MapController.swift */,
-				2803365D201D22B200F4A038 /* LoginView.storyboard */,
-				C4CA36AD201D0DAC00288013 /* Assets.xcassets */,
-				C4CA36AF201D0DAC00288013 /* LaunchScreen.storyboard */,
-				C4CA36B2201D0DAC00288013 /* Info.plist */,
-				C4CA36E4201D3E8D00288013 /* Ntwrk-Bridging-Header.h */,
-			);
-			path = Ntwrk;
-			sourceTree = "<group>";
-		};
-		C4CA36BA201D0DAC00288013 /* NtwrkTests */ = {
-			isa = PBXGroup;
-			children = (
-				C4CA36BB201D0DAC00288013 /* NtwrkTests.swift */,
-				C4CA36BD201D0DAC00288013 /* Info.plist */,
-			);
-			path = NtwrkTests;
-			sourceTree = "<group>";
-		};
-		C4CA36C5201D0DAC00288013 /* NtwrkUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C4CA36C6201D0DAC00288013 /* NtwrkUITests.swift */,
-				C4CA36C8201D0DAC00288013 /* Info.plist */,
-			);
-			path = NtwrkUITests;
-			sourceTree = "<group>";
-		};
-		C4CA36D8201D30F300288013 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
+        C4CA3696201D0DAC00288013 = {
+            isa = PBXGroup;
+            children = (
+                C4CA36A1201D0DAC00288013 /* Ntwrk */,
+                C4CA36BA201D0DAC00288013 /* NtwrkTests */,
+                C4CA36C5201D0DAC00288013 /* NtwrkUITests */,
+                C4CA36A0201D0DAC00288013 /* Products */,
+                C4CA36D8201D30F300288013 /* Frameworks */,
+            );
+            sourceTree = "<group>";
+        };
+        C4CA36A0201D0DAC00288013 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                C4CA369F201D0DAC00288013 /* Ntwrk.app */,
+                C4CA36B7201D0DAC00288013 /* NtwrkTests.xctest */,
+                C4CA36C2201D0DAC00288013 /* NtwrkUITests.xctest */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        C4CA36A1201D0DAC00288013 /* Ntwrk */ = {
+            isa = PBXGroup;
+            children = (
+                C4CA36A2201D0DAC00288013 /* AppDelegate.swift */,
+                C4CA36A4201D0DAC00288013 /* RootViewController.swift */,
+                C4CA36A6201D0DAC00288013 /* DataViewController.swift */,
+                C4CA36A8201D0DAC00288013 /* ModelController.swift */,
+                C4CA36AA201D0DAC00288013 /* Main.storyboard */,
+                C4CA36D6201D256400288013 /* MapView.storyboard */,
+                C4CA3725201D40FF00288013 /* MapController.swift */,
+                2803365D201D22B200F4A038 /* LoginView.storyboard */,
+                C4CA36AD201D0DAC00288013 /* Assets.xcassets */,
+                C4CA36AF201D0DAC00288013 /* LaunchScreen.storyboard */,
+                C4CA36B2201D0DAC00288013 /* Info.plist */,
+                C4CA36E4201D3E8D00288013 /* Ntwrk-Bridging-Header.h */,
+                2803365F201D238700F4A038 /* linkedin-sdk.framework */,
+            );
+            path = Ntwrk;
+            sourceTree = "<group>";
+        };
+        C4CA36BA201D0DAC00288013 /* NtwrkTests */ = {
+            isa = PBXGroup;
+            children = (
+                C4CA36BB201D0DAC00288013 /* NtwrkTests.swift */,
+                C4CA36BD201D0DAC00288013 /* Info.plist */,
+            );
+            path = NtwrkTests;
+            sourceTree = "<group>";
+        };
+        C4CA36C5201D0DAC00288013 /* NtwrkUITests */ = {
+            isa = PBXGroup;
+            children = (
+                C4CA36C6201D0DAC00288013 /* NtwrkUITests.swift */,
+                C4CA36C8201D0DAC00288013 /* Info.plist */,
+            );
+            path = NtwrkUITests;
+            sourceTree = "<group>";
+        };
+        C4CA36D8201D30F300288013 /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C4CA369E201D0DAC00288013 /* Ntwrk */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C4CA36CB201D0DAC00288013 /* Build configuration list for PBXNativeTarget "Ntwrk" */;
-			buildPhases = (
-				C4CA369B201D0DAC00288013 /* Sources */,
-				C4CA369C201D0DAC00288013 /* Frameworks */,
-				C4CA369D201D0DAC00288013 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Ntwrk;
-			productName = Ntwrk;
-			productReference = C4CA369F201D0DAC00288013 /* Ntwrk.app */;
-			productType = "com.apple.product-type.application";
-		};
-		C4CA36B6201D0DAC00288013 /* NtwrkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C4CA36CE201D0DAC00288013 /* Build configuration list for PBXNativeTarget "NtwrkTests" */;
-			buildPhases = (
-				C4CA36B3201D0DAC00288013 /* Sources */,
-				C4CA36B4201D0DAC00288013 /* Frameworks */,
-				C4CA36B5201D0DAC00288013 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C4CA36B9201D0DAC00288013 /* PBXTargetDependency */,
-			);
-			name = NtwrkTests;
-			productName = NtwrkTests;
-			productReference = C4CA36B7201D0DAC00288013 /* NtwrkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C4CA36C1201D0DAC00288013 /* NtwrkUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C4CA36D1201D0DAC00288013 /* Build configuration list for PBXNativeTarget "NtwrkUITests" */;
-			buildPhases = (
-				C4CA36BE201D0DAC00288013 /* Sources */,
-				C4CA36BF201D0DAC00288013 /* Frameworks */,
-				C4CA36C0201D0DAC00288013 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C4CA36C4201D0DAC00288013 /* PBXTargetDependency */,
-			);
-			name = NtwrkUITests;
-			productName = NtwrkUITests;
-			productReference = C4CA36C2201D0DAC00288013 /* NtwrkUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
+        C4CA369E201D0DAC00288013 /* Ntwrk */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = C4CA36CB201D0DAC00288013 /* Build configuration list for PBXNativeTarget "Ntwrk" */;
+            buildPhases = (
+                C4CA369B201D0DAC00288013 /* Sources */,
+                C4CA369C201D0DAC00288013 /* Frameworks */,
+                C4CA369D201D0DAC00288013 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = Ntwrk;
+            productName = Ntwrk;
+            productReference = C4CA369F201D0DAC00288013 /* Ntwrk.app */;
+            productType = "com.apple.product-type.application";
+        };
+        C4CA36B6201D0DAC00288013 /* NtwrkTests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = C4CA36CE201D0DAC00288013 /* Build configuration list for PBXNativeTarget "NtwrkTests" */;
+            buildPhases = (
+                C4CA36B3201D0DAC00288013 /* Sources */,
+                C4CA36B4201D0DAC00288013 /* Frameworks */,
+                C4CA36B5201D0DAC00288013 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                C4CA36B9201D0DAC00288013 /* PBXTargetDependency */,
+            );
+            name = NtwrkTests;
+            productName = NtwrkTests;
+            productReference = C4CA36B7201D0DAC00288013 /* NtwrkTests.xctest */;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
+        C4CA36C1201D0DAC00288013 /* NtwrkUITests */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = C4CA36D1201D0DAC00288013 /* Build configuration list for PBXNativeTarget "NtwrkUITests" */;
+            buildPhases = (
+                C4CA36BE201D0DAC00288013 /* Sources */,
+                C4CA36BF201D0DAC00288013 /* Frameworks */,
+                C4CA36C0201D0DAC00288013 /* Resources */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+                C4CA36C4201D0DAC00288013 /* PBXTargetDependency */,
+            );
+            name = NtwrkUITests;
+            productName = NtwrkUITests;
+            productReference = C4CA36C2201D0DAC00288013 /* NtwrkUITests.xctest */;
+            productType = "com.apple.product-type.bundle.ui-testing";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C4CA3697201D0DAC00288013 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Hayley Eckert";
-				TargetAttributes = {
-					C4CA369E201D0DAC00288013 = {
-						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.Maps.iOS = {
-								enabled = 0;
-							};
-						};
-					};
-					C4CA36B6201D0DAC00288013 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = C4CA369E201D0DAC00288013;
-					};
-					C4CA36C1201D0DAC00288013 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = C4CA369E201D0DAC00288013;
-					};
-				};
-			};
-			buildConfigurationList = C4CA369A201D0DAC00288013 /* Build configuration list for PBXProject "Ntwrk" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = C4CA3696201D0DAC00288013;
-			productRefGroup = C4CA36A0201D0DAC00288013 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				C4CA369E201D0DAC00288013 /* Ntwrk */,
-				C4CA36B6201D0DAC00288013 /* NtwrkTests */,
-				C4CA36C1201D0DAC00288013 /* NtwrkUITests */,
-			);
-		};
+        C4CA3697201D0DAC00288013 /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 0920;
+                LastUpgradeCheck = 0920;
+                ORGANIZATIONNAME = "Hayley Eckert";
+                TargetAttributes = {
+                    C4CA369E201D0DAC00288013 = {
+                        CreatedOnToolsVersion = 9.2;
+                        LastSwiftMigration = 0920;
+                        ProvisioningStyle = Automatic;
+                        SystemCapabilities = {
+                            com.apple.Maps.iOS = {
+                                enabled = 0;
+                            };
+                        };
+                    };
+                    C4CA36B6201D0DAC00288013 = {
+                        CreatedOnToolsVersion = 9.2;
+                        ProvisioningStyle = Automatic;
+                        TestTargetID = C4CA369E201D0DAC00288013;
+                    };
+                    C4CA36C1201D0DAC00288013 = {
+                        CreatedOnToolsVersion = 9.2;
+                        ProvisioningStyle = Automatic;
+                        TestTargetID = C4CA369E201D0DAC00288013;
+                    };
+                };
+            };
+            buildConfigurationList = C4CA369A201D0DAC00288013 /* Build configuration list for PBXProject "Ntwrk" */;
+            compatibilityVersion = "Xcode 8.0";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = C4CA3696201D0DAC00288013;
+            productRefGroup = C4CA36A0201D0DAC00288013 /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                C4CA369E201D0DAC00288013 /* Ntwrk */,
+                C4CA36B6201D0DAC00288013 /* NtwrkTests */,
+                C4CA36C1201D0DAC00288013 /* NtwrkUITests */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C4CA369D201D0DAC00288013 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4CA36B1201D0DAC00288013 /* LaunchScreen.storyboard in Resources */,
-				C4CA36AE201D0DAC00288013 /* Assets.xcassets in Resources */,
-				C4CA36AC201D0DAC00288013 /* Main.storyboard in Resources */,
-				C4CA36D7201D256400288013 /* MapView.storyboard in Resources */,
-				2803365E201D22B200F4A038 /* LoginView.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4CA36B5201D0DAC00288013 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4CA36C0201D0DAC00288013 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        C4CA369D201D0DAC00288013 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                C4CA36B1201D0DAC00288013 /* LaunchScreen.storyboard in Resources */,
+                C4CA36AE201D0DAC00288013 /* Assets.xcassets in Resources */,
+                C4CA36AC201D0DAC00288013 /* Main.storyboard in Resources */,
+                C4CA36D7201D256400288013 /* MapView.storyboard in Resources */,
+                2803365E201D22B200F4A038 /* LoginView.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        C4CA36B5201D0DAC00288013 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        C4CA36C0201D0DAC00288013 /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C4CA369B201D0DAC00288013 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4CA36A5201D0DAC00288013 /* RootViewController.swift in Sources */,
-				C4CA36A9201D0DAC00288013 /* ModelController.swift in Sources */,
-				C4CA36A7201D0DAC00288013 /* DataViewController.swift in Sources */,
-				C4CA3726201D40FF00288013 /* MapController.swift in Sources */,
-				C4CA36A3201D0DAC00288013 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4CA36B3201D0DAC00288013 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4CA36BC201D0DAC00288013 /* NtwrkTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C4CA36BE201D0DAC00288013 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4CA36C7201D0DAC00288013 /* NtwrkUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        C4CA369B201D0DAC00288013 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                C4CA36A5201D0DAC00288013 /* RootViewController.swift in Sources */,
+                C4CA36A9201D0DAC00288013 /* ModelController.swift in Sources */,
+                C4CA36A7201D0DAC00288013 /* DataViewController.swift in Sources */,
+                C4CA3726201D40FF00288013 /* MapController.swift in Sources */,
+                C4CA36A3201D0DAC00288013 /* AppDelegate.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        C4CA36B3201D0DAC00288013 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                C4CA36BC201D0DAC00288013 /* NtwrkTests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        C4CA36BE201D0DAC00288013 /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                C4CA36C7201D0DAC00288013 /* NtwrkUITests.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C4CA36B9201D0DAC00288013 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C4CA369E201D0DAC00288013 /* Ntwrk */;
-			targetProxy = C4CA36B8201D0DAC00288013 /* PBXContainerItemProxy */;
-		};
-		C4CA36C4201D0DAC00288013 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C4CA369E201D0DAC00288013 /* Ntwrk */;
-			targetProxy = C4CA36C3201D0DAC00288013 /* PBXContainerItemProxy */;
-		};
+        C4CA36B9201D0DAC00288013 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = C4CA369E201D0DAC00288013 /* Ntwrk */;
+            targetProxy = C4CA36B8201D0DAC00288013 /* PBXContainerItemProxy */;
+        };
+        C4CA36C4201D0DAC00288013 /* PBXTargetDependency */ = {
+            isa = PBXTargetDependency;
+            target = C4CA369E201D0DAC00288013 /* Ntwrk */;
+            targetProxy = C4CA36C3201D0DAC00288013 /* PBXContainerItemProxy */;
+        };
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C4CA36AA201D0DAC00288013 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4CA36AB201D0DAC00288013 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C4CA36AF201D0DAC00288013 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4CA36B0201D0DAC00288013 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        C4CA36AA201D0DAC00288013 /* Main.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                C4CA36AB201D0DAC00288013 /* Base */,
+            );
+            name = Main.storyboard;
+            sourceTree = "<group>";
+        };
+        C4CA36AF201D0DAC00288013 /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                C4CA36B0201D0DAC00288013 /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C4CA36C9201D0DAC00288013 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		C4CA36CA201D0DAC00288013 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C4CA36CC201D0DAC00288013 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/Frameworks/Static";
-				INFOPLIST_FILE = Ntwrk/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					ArcGIS,
-					"-l",
-					"c++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.Ntwrk";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Ntwrk/Ntwrk-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C4CA36CD201D0DAC00288013 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/Frameworks/Static";
-				INFOPLIST_FILE = Ntwrk/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-framework",
-					ArcGIS,
-					"-l",
-					"c++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.Ntwrk";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Ntwrk/Ntwrk-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C4CA36CF201D0DAC00288013 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NtwrkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.NtwrkTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ntwrk.app/Ntwrk";
-			};
-			name = Debug;
-		};
-		C4CA36D0201D0DAC00288013 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NtwrkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.NtwrkTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ntwrk.app/Ntwrk";
-			};
-			name = Release;
-		};
-		C4CA36D2201D0DAC00288013 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NtwrkUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.NtwrkUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Ntwrk;
-			};
-			name = Debug;
-		};
-		C4CA36D3201D0DAC00288013 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = NtwrkUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.NtwrkUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Ntwrk;
-			};
-			name = Release;
-		};
+        C4CA36C9201D0DAC00288013 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+                MTL_ENABLE_DEBUG_INFO = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        C4CA36CA201D0DAC00288013 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                SDKROOT = iphoneos;
+                SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        C4CA36CC201D0DAC00288013 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/Frameworks/Static";
+                INFOPLIST_FILE = Ntwrk/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                OTHER_LDFLAGS = (
+                    "-ObjC",
+                    "-framework",
+                    ArcGIS,
+                    "-l",
+                    "c++",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.Ntwrk";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_OBJC_BRIDGING_HEADER = "Ntwrk/Ntwrk-Bridging-Header.h";
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        C4CA36CD201D0DAC00288013 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/Frameworks/Static";
+                INFOPLIST_FILE = Ntwrk/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+                OTHER_LDFLAGS = (
+                    "-ObjC",
+                    "-framework",
+                    ArcGIS,
+                    "-l",
+                    "c++",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.Ntwrk";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_OBJC_BRIDGING_HEADER = "Ntwrk/Ntwrk-Bridging-Header.h";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
+        C4CA36CF201D0DAC00288013 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = NtwrkTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.NtwrkTests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ntwrk.app/Ntwrk";
+            };
+            name = Debug;
+        };
+        C4CA36D0201D0DAC00288013 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                BUNDLE_LOADER = "$(TEST_HOST)";
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = NtwrkTests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.NtwrkTests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ntwrk.app/Ntwrk";
+            };
+            name = Release;
+        };
+        C4CA36D2201D0DAC00288013 /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = NtwrkUITests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.NtwrkUITests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = Ntwrk;
+            };
+            name = Debug;
+        };
+        C4CA36D3201D0DAC00288013 /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                INFOPLIST_FILE = NtwrkUITests/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+                PRODUCT_BUNDLE_IDENTIFIER = "Hayley-Eckert.NtwrkUITests";
+                PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+                TEST_TARGET_NAME = Ntwrk;
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C4CA369A201D0DAC00288013 /* Build configuration list for PBXProject "Ntwrk" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C4CA36C9201D0DAC00288013 /* Debug */,
-				C4CA36CA201D0DAC00288013 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C4CA36CB201D0DAC00288013 /* Build configuration list for PBXNativeTarget "Ntwrk" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C4CA36CC201D0DAC00288013 /* Debug */,
-				C4CA36CD201D0DAC00288013 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C4CA36CE201D0DAC00288013 /* Build configuration list for PBXNativeTarget "NtwrkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C4CA36CF201D0DAC00288013 /* Debug */,
-				C4CA36D0201D0DAC00288013 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C4CA36D1201D0DAC00288013 /* Build configuration list for PBXNativeTarget "NtwrkUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C4CA36D2201D0DAC00288013 /* Debug */,
-				C4CA36D3201D0DAC00288013 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        C4CA369A201D0DAC00288013 /* Build configuration list for PBXProject "Ntwrk" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C4CA36C9201D0DAC00288013 /* Debug */,
+                C4CA36CA201D0DAC00288013 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        C4CA36CB201D0DAC00288013 /* Build configuration list for PBXNativeTarget "Ntwrk" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C4CA36CC201D0DAC00288013 /* Debug */,
+                C4CA36CD201D0DAC00288013 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        C4CA36CE201D0DAC00288013 /* Build configuration list for PBXNativeTarget "NtwrkTests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C4CA36CF201D0DAC00288013 /* Debug */,
+                C4CA36D0201D0DAC00288013 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        C4CA36D1201D0DAC00288013 /* Build configuration list for PBXNativeTarget "NtwrkUITests" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                C4CA36D2201D0DAC00288013 /* Debug */,
+                C4CA36D3201D0DAC00288013 /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = C4CA3697201D0DAC00288013 /* Project object */;
+    };
+    rootObject = C4CA3697201D0DAC00288013 /* Project object */;
 }
