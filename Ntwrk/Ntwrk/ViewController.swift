@@ -120,8 +120,16 @@ class ViewController: UIViewController {
             
             
             let titlePositions : Dictionary = response.jsonObject["positions"]! as! Dictionary<String, Any>
-            let PositionObjects : Array<Dictionary> = titlePositions["values"] as! Array<Dictionary<String,Any>>
-            let title: String = PositionObjects[0]["title"]! as! String
+            print(titlePositions["_total"] as! Int)
+            print("hello")
+            var title = String()
+            if (titlePositions["_total"] as! Int != 0) {
+             let PositionObjects : Array<Dictionary> = titlePositions["values"] as! Array<Dictionary<String,Any>>
+             title = PositionObjects[0]["title"]! as! String
+            }
+            else {
+                 title  = ""
+            }
             print(title)
             print(firstName, lastName)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
