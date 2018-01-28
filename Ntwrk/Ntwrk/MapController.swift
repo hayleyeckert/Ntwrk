@@ -9,6 +9,10 @@ class MSCCoordinates : NSObject, MKAnnotation{
     var coordinate = CLLocationCoordinate2D(latitude: 30.6117, longitude: -96.3417)
     var title: String? = "MSC"
 }
+class AirportCoordinates : NSObject, MKAnnotation{
+    var coordinate = CLLocationCoordinate2D(latitude: 30.5910076, longitude: -96.3627607)
+    var title: String? = "Easterwood Airport"
+}
 import UIKit
 import MapKit
 import CoreLocation
@@ -44,6 +48,7 @@ class MapController: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
         //mapView.addAnnotation(MSCCoordinates())
         centerMapOnLocation(location: initialLocation)
         setupData()
+        setupDataAirport()
         // Do any additional setup after loading the view.
     }
 
@@ -97,6 +102,37 @@ class MapController: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
             print("System can't track regions")
         }
     }
+    
+    func setupDataAirport() {
+        if CLLocationManager.isMonitoringAvailable(for: CLCircularRegion.self) {
+            
+            // 2. region data
+            let title1 = "Easterwood Airport"
+            let coordinate1 = CLLocationCoordinate2DMake(30.5910076, -96.3627607)
+            let regionRadius1 = 50.0
+            
+            // 3. setup region
+            let region1 = CLCircularRegion(center: CLLocationCoordinate2D(latitude: coordinate1.latitude,
+                                                                         longitude: coordinate1.longitude), radius: regionRadius1, identifier: title1)
+            region1.notifyOnExit = true;
+            region1.notifyOnEntry = true;
+            locationManager.startMonitoring(for: region1)
+            
+            // 4. setup annotation
+            let restaurantAnnotation1 = MKPointAnnotation()
+            restaurantAnnotation1.coordinate = coordinate1;
+            restaurantAnnotation1.title = "Easterwood Airport";
+            mapView.addAnnotation(restaurantAnnotation1)
+            
+            // 5. setup circle
+            let circle1 = MKCircle(center: coordinate1, radius: regionRadius1)
+            self.mapView.add(circle1)
+            
+        }
+        else {
+            print("System can't track regions")
+        }
+    }
  
     func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
         print("Started Monitoring Region: \(region.identifier)")
@@ -131,7 +167,7 @@ class MapController: UIViewController, MKMapViewDelegate, CLLocationManagerDeleg
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         
-        let ac = UIAlertController(title: "TAMUHack", message: "View Participants", preferredStyle: .alert)
+        let ac = UIAlertController(title: "Live Event", message: "Ntwrk Here", preferredStyle: .alert)
         let action = UIAlertAction(title: "Yes Please", style: .cancel, handler: { // Also action dismisses AlertController when pressed.
             action in
             self.performSegue(withIdentifier: "PopViewSegue", sender: nil)

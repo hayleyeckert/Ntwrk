@@ -47,17 +47,17 @@ class ViewController: UIViewController {
         
         linkedinHelper.authorizeSuccess({ [unowned self] (lsToken) -> Void in
             
-            self.writeConsoleLine("Login success") //lsToken: \(lsToken)
+           // self.writeConsoleLine("Login success") //lsToken: \(lsToken)
         }, error: { [unowned self] (error) -> Void in
             
-            self.writeConsoleLine("Encounter error: \(error.localizedDescription)")
+            //self.writeConsoleLine("Encounter error: \(error.localizedDescription)")
         }, cancel: { [unowned self] () -> Void in
             
-            self.writeConsoleLine("User Cancelled!")
+          //  self.writeConsoleLine("User Cancelled!")
         })
         linkedinHelper.requestURL("https://api.linkedin.com/v1/people/~:(id,first-name,last-name,email-address,picture-url,picture-urls::(original),positions,date-of-birth,phone-numbers,location)?format=json", requestType: LinkedinSwiftRequestGet, success: { (response) -> Void in
             
-            self.writeConsoleLine("Request success with response: \(response)")
+           // self.writeConsoleLine("Request success with response: \(response)")
             let firstName = response.jsonObject["firstName"]!
             let lastName = response.jsonObject["lastName"]!
             let emailAdress = response.jsonObject["emailAddress"]!
@@ -68,7 +68,6 @@ class ViewController: UIViewController {
             print(response.jsonObject["emailAddress"]!)
             print(firstName, lastName)
             print(response.jsonObject["location.name"])
-            
             
             
             //let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -82,7 +81,7 @@ class ViewController: UIViewController {
             
         }) { [unowned self] (error) -> Void in
             
-            self.writeConsoleLine("Encounter error: \(error.localizedDescription)")
+           // self.writeConsoleLine("Encounter error: \(error.localizedDescription)")
         }
 
     }
@@ -95,36 +94,77 @@ class ViewController: UIViewController {
         
         linkedinHelper.requestURL("https://api.linkedin.com/v1/people/~:(id,first-name,last-name,email-address,picture-url,picture-urls::(original),positions,date-of-birth,phone-numbers,location)?format=json", requestType: LinkedinSwiftRequestGet, success: { (response) -> Void in
             print(response)
-            self.writeConsoleLine("Request success with response: \(response)")
+            //self.writeConsoleLine("Request success with response: \(response)")
             let firstName = response.jsonObject["firstName"]!
             let lastName = response.jsonObject["lastName"]!
             let emailAdress = response.jsonObject["emailAddress"]!
-            var location = response.jsonObject["location"]
-            print(location)
+            let location : Dictionary = response.jsonObject["location"]! as! Dictionary<String, Any>
+            var City: String = location["name"]! as! String
             //let name = location!["name"]!
-            let pictureUrl = response.jsonObject["pictureUrl"]!
+            let pictureUrls : Dictionary = response.jsonObject["pictureUrls"]! as! Dictionary<String, Any>
+            let pictureArray : Array<NSObject> = pictureUrls["values"] as! Array<NSObject>
+            let picture = pictureArray[0]
             let positions = response.jsonObject["positions"]!
+            print(positions)
+         /*   let data = (positions as AnyObject).data(using: String.Encoding.utf8.rawValue, allowLossyConversion: false)!
             
-            print(response.jsonObject["location"]!)
-            print(location)
+            do {
+                let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: AnyObject]
+                if let names = json["names"] as? [String] {
+                    print(names)
+                }
+            } catch let error as NSError {
+                print("Failed to load: \(error.localizedDescription)")
+            }*/
+            
+            
+            
+            let titlePositions : Dictionary = response.jsonObject["positions"]! as! Dictionary<String, Any>
+            let PositionObjects : Array<Dictionary> = titlePositions["values"]! as! Array<Dictionary<String,Any>>
+            let title: String = PositionObjects[0]["title"]! as! String
+            print(title)
             print(firstName, lastName)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let ProfileController = storyboard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
             
-            ProfileController.NameString = "Michayal Mathew" //firstName as! String
-            ProfileController.LocString = "College Station, TX" //location as! String
-            ProfileController.PosString = "Intern at NASA" //positions as! String
+            ProfileController.NameString = (firstName as! String) + " " + (lastName as! String)
+            ProfileController.LocString = City
+            ProfileController.PosString = title //positions as! String
+            //ProfileController.PicString = picture as! String
+            let URL_IMAGE = URL(string: picture as! String)
+            let session = URLSession(configuration: .default)
+            let getImageFromURL = session.dataTask(with: URL_IMAGE!) { (data, response, error) in
+                if let e = error
+                {
+                    print("Error occurred: \(e)")
+                }
+                else {
+                    if (response as! HTTPURLResponse) != nil {
+                        if let imageData = data {
+                            let image = UIImage(data: imageData)
+                            ProfileController.PicString = image!
+                        }
+                        else {
+                            print("Image is corrupted")
+                        }
+                    }
+                    else {
+                        print("No response from server")
+                    }
+                }
+            }
+            getImageFromURL.resume()
             self.present(ProfileController, animated: true, completion: nil)
             
             
         }) { [unowned self] (error) -> Void in
                 
-            self.writeConsoleLine("Encounter error: \(error.localizedDescription)")
+            //self.writeConsoleLine("Encounter error: \(error.localizedDescription)")
         }
         
         //print(LSResponse);
     }
-    
+    /*
     fileprivate func writeConsoleLine(_ log: String, funcName: String = #function) {
         
         DispatchQueue.main.async { () -> Void in
@@ -141,6 +181,7 @@ class ViewController: UIViewController {
             self.consoleTextView.scrollRectToVisible(rect, animated: true)
         }
     }
+ */
     
 }
 

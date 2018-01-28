@@ -21,7 +21,7 @@ class TableViewController2: UITableViewController {
         let Hayley = Ref(imageName: "Hayley.jpg", description: "Hayley Eckert", position: "Intern at Google", location: "College Station, TX")
         let Billy = Ref(imageName: "Billy.jpg", description: "Bill Newman", position: "Intern at AT&T", location: "College Station, TX")
         let Cyrus = Ref(imageName: "Cyrus.jpg", description: "Cyrus Roshan", position: "Intern at LinkedIn", location: "Dallas, TX")
-        let ElonMusk = Ref(imageName: "Elon.JPEG", description: "Elon Musk", position: "CEO of Tesla/SpaceX", location: "Mars")
+        let ElonMusk = Ref(imageName: "ElonMusk.jpg", description: "Elon Musk", position: "CEO of Tesla/SpaceX", location: "Mars")
         let MichaelScott = Ref(imageName: "MichaelScott.JPEG", description: "Michael Scott", position: "Dunder Mifflin, Inc.", location: "Scranton, PA")
         //let KobeBryant = Ref(imageName: "R23.jpg", description: "R23", position: "CEO", location: "College Station, TX")
         let EKingGill = Ref(imageName: "EKingGill.JPEG", description: "E King Gill", position: "12th Man", location: "College Station, TX")

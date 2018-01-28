@@ -5,6 +5,11 @@
 //  Created by Li Jiantang on 19/11/2015.
 //  Copyright © 2015 Carma. All rights reserved.
 //
+var NameString = String()
+var LocString = String()
+var PosString = String()
+var PicString = String()
+
 
 import UIKit
 import CoreLocation

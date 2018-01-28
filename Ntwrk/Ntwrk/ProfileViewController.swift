@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ProfileViewController: UIViewController {
 
@@ -23,15 +24,17 @@ class ProfileViewController: UIViewController {
     var NameString = String()
     var LocString = String()
     var PosString = String()
+    var PicString = UIImage()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(PicString)
         NameLabel.text = NameString
         LocLabel.text = LocString
         PosLabel.text = PosString
-        ProfPic.image = #imageLiteral(resourceName: "Michayal")
-
-
+        ProfPic.image = PicString
+        
         // Do any additional setup after loading the view.
     }
 
